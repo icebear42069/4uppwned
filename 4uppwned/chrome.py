@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 import fake_useragent
 from selenium.webdriver.support.wait import WebDriverWait
 import selenium.webdriver.support.expected_conditions as EC
+from selenium.webdriver.support.ui import Select
 
 
 class UndetectedChromeDriver:
@@ -30,7 +31,8 @@ class UndetectedChromeDriver:
         self.date = date
 
     def run(self):
-
+        # // *[ @ id = "nav"] / div / div[3] / div / div / a[4]
+        pass
 
     def login(self):
         self.driver.get('https://foreupsoftware.com/index.php/booking/19765/2431#teetimes')
